@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="customer.bmwallet.com.bangmodwallet" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:name="android.hardware.nfc.hce"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <permission
+        android:name="customer.bmwallet.com.bangmodwallet.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="customer.bmwallet.com.bangmodwallet.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name=".MainPage"
+            android:label="@string/app_name"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="Bangmod Wallet"
+            android:icon="@drawable/app_icon"
+            android:theme="@style/Theme.TransSysBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddPromoActivity"
+            android:label="@string/title_activity_add_promo"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="customer.bmwallet.com.bangmodwallet" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMNotificationIntentService" />
+
+        <activity
+            android:name=".PromotionDetailActivity"
+            android:label="@string/title_activity_promotion_detail"
+            android:parentActivityName=".MainPage"
+            android:icon="@drawable/beam_icon_white"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="customer.bmwallet.com.bangmodwallet.MainPage" />
+        </activity>
+
+        <service
+            android:name=".CardService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NFC_SERVICE" >
+
+            <!-- Intent filter indicating that we support card emulation. -->
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--
+                 Required XML configuration file, listing the AIDs that we are emulating cards
+                 for. This defines what protocols our card emulation service supports.
+            -->
+            <meta-data
+                android:name="android.nfc.cardemulation.host_apdu_service"
+                android:resource="@xml/aid_list" />
+        </service>
+
+        <activity
+            android:name=".AfterTapActivity"
+            android:label="@string/title_activity_after_tap"
+            android:theme="@android:style/Theme.Holo.Light.Dialog"
+            android:screenOrientation="portrait">
+>
+        </activity>
+        <activity
+            android:name=".LineItemDetailActivity"
+            android:label="@string/title_activity_line_item_detail"
+            android:icon="@drawable/beam_icon_white"
+            android:parentActivityName=".MainPage"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <receiver
+            android:name=".SessionReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+    </application>
+
+</manifest>

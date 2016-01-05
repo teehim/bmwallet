@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4">
+
+    <ImageView
+        android:id="@+id/reward_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/beam_icon"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reward_name"
+        android:text="Donut"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reward_amount"
+        android:text="5 ชิ้น"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reward_price"
+        android:layout_weight="1"
+        android:text="฿ 15"
+        android:textSize="15sp"
+        android:gravity="left"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

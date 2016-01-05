@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/big_card"
+    android:weightSum="3">
+
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/beam_icon"/>
+    <TextView
+        android:id="@+id/store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:text="Store Name"/>
+
+    <TextView
+        android:id="@+id/store_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/before_tap"
+        android:text="20"/>
+
+
+</LinearLayout>

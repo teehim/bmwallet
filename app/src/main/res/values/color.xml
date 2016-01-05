@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+        name="bmp_background"
+        >#2fa7fc</color>
+    <color name="before_tap">#29A329</color>
+    <color name="after_tap">#FF3300</color>
+</resources>

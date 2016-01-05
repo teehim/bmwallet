@@ -1,0 +1,216 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+	package
+		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionCode
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+uses-permission#android.permission.INTERNET
+ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:6:5
+	android:name
+		ADDED from AndroidManifest.xml:6:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:7:5
+	android:name
+		ADDED from AndroidManifest.xml:7:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:8:5
+	android:name
+		ADDED from AndroidManifest.xml:8:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:9:5
+	android:name
+		ADDED from AndroidManifest.xml:9:22
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:10:5
+	android:name
+		ADDED from AndroidManifest.xml:10:22
+uses-feature#android.hardware.nfc.hce
+ADDED from AndroidManifest.xml:12:5
+	android:required
+		ADDED from AndroidManifest.xml:14:9
+	android:name
+		ADDED from AndroidManifest.xml:13:9
+uses-permission#android.permission.NFC
+ADDED from AndroidManifest.xml:16:5
+	android:name
+		ADDED from AndroidManifest.xml:16:22
+permission#customer.bmwallet.com.bangmodwallet.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:18:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:20:9
+	android:name
+		ADDED from AndroidManifest.xml:19:9
+uses-permission#customer.bmwallet.com.bangmodwallet.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+application
+ADDED from AndroidManifest.xml:24:5
+MERGED from com.astuetz:pagerslidingtabstrip:1.0.1:4:5
+MERGED from com.google.android.gms:play-services:5.2.08:16:5
+MERGED from com.pkmmte.view:circularimageview:1.1:11:5
+	android:allowBackup
+		ADDED from AndroidManifest.xml:25:9
+	android:theme
+		ADDED from AndroidManifest.xml:26:9
+activity#customer.bmwallet.com.bangmodwallet.MainPage
+ADDED from AndroidManifest.xml:27:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:31:13
+	android:label
+		ADDED from AndroidManifest.xml:29:13
+	android:icon
+		ADDED from AndroidManifest.xml:30:13
+	android:name
+		ADDED from AndroidManifest.xml:28:13
+activity#customer.bmwallet.com.bangmodwallet.LoginActivity
+ADDED from AndroidManifest.xml:33:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:38:13
+	android:label
+		ADDED from AndroidManifest.xml:35:13
+	android:icon
+		ADDED from AndroidManifest.xml:36:13
+	android:theme
+		ADDED from AndroidManifest.xml:37:13
+	android:name
+		ADDED from AndroidManifest.xml:34:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:39:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:40:17
+	android:name
+		ADDED from AndroidManifest.xml:40:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:42:17
+	android:name
+		ADDED from AndroidManifest.xml:42:27
+activity#customer.bmwallet.com.bangmodwallet.AddPromoActivity
+ADDED from AndroidManifest.xml:45:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:48:13
+	android:label
+		ADDED from AndroidManifest.xml:47:13
+	android:name
+		ADDED from AndroidManifest.xml:46:13
+receiver#customer.bmwallet.com.bangmodwallet.GcmBroadcastReceiver
+ADDED from AndroidManifest.xml:51:9
+	android:permission
+		ADDED from AndroidManifest.xml:53:13
+	android:name
+		ADDED from AndroidManifest.xml:52:13
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+customer.bmwallet.com.bangmodwallet
+ADDED from AndroidManifest.xml:54:13
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:55:17
+	android:name
+		ADDED from AndroidManifest.xml:55:25
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:56:17
+	android:name
+		ADDED from AndroidManifest.xml:56:25
+category#customer.bmwallet.com.bangmodwallet
+ADDED from AndroidManifest.xml:58:17
+	android:name
+		ADDED from AndroidManifest.xml:58:27
+service#customer.bmwallet.com.bangmodwallet.GCMNotificationIntentService
+ADDED from AndroidManifest.xml:62:9
+	android:name
+		ADDED from AndroidManifest.xml:62:18
+activity#customer.bmwallet.com.bangmodwallet.PromotionDetailActivity
+ADDED from AndroidManifest.xml:64:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:69:13
+	android:label
+		ADDED from AndroidManifest.xml:66:13
+	android:icon
+		ADDED from AndroidManifest.xml:68:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:67:13
+	android:name
+		ADDED from AndroidManifest.xml:65:13
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from AndroidManifest.xml:70:13
+	android:name
+		ADDED from AndroidManifest.xml:71:17
+	android:value
+		ADDED from AndroidManifest.xml:72:17
+service#customer.bmwallet.com.bangmodwallet.CardService
+ADDED from AndroidManifest.xml:75:9
+	android:exported
+		ADDED from AndroidManifest.xml:77:13
+	android:permission
+		ADDED from AndroidManifest.xml:78:13
+	android:name
+		ADDED from AndroidManifest.xml:76:13
+intent-filter#android.intent.category.DEFAULT+android.nfc.cardemulation.action.HOST_APDU_SERVICE
+ADDED from AndroidManifest.xml:81:13
+action#android.nfc.cardemulation.action.HOST_APDU_SERVICE
+ADDED from AndroidManifest.xml:82:17
+	android:name
+		ADDED from AndroidManifest.xml:82:25
+category#android.intent.category.DEFAULT
+ADDED from AndroidManifest.xml:84:17
+	android:name
+		ADDED from AndroidManifest.xml:84:27
+meta-data#android.nfc.cardemulation.host_apdu_service
+ADDED from AndroidManifest.xml:90:13
+	android:resource
+		ADDED from AndroidManifest.xml:92:17
+	android:name
+		ADDED from AndroidManifest.xml:91:17
+activity#customer.bmwallet.com.bangmodwallet.AfterTapActivity
+ADDED from AndroidManifest.xml:95:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:99:13
+	android:label
+		ADDED from AndroidManifest.xml:97:13
+	android:theme
+		ADDED from AndroidManifest.xml:98:13
+	android:name
+		ADDED from AndroidManifest.xml:96:13
+activity#customer.bmwallet.com.bangmodwallet.LineItemDetailActivity
+ADDED from AndroidManifest.xml:102:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:107:13
+	android:label
+		ADDED from AndroidManifest.xml:104:13
+	android:icon
+		ADDED from AndroidManifest.xml:105:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:106:13
+	android:name
+		ADDED from AndroidManifest.xml:103:13
+receiver#customer.bmwallet.com.bangmodwallet.SessionReceiver
+ADDED from AndroidManifest.xml:110:9
+	android:exported
+		ADDED from AndroidManifest.xml:113:13
+	android:enabled
+		ADDED from AndroidManifest.xml:112:13
+	android:name
+		ADDED from AndroidManifest.xml:111:13
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.astuetz:pagerslidingtabstrip:1.0.1:2:5
+MERGED from com.doomonafireball.betterpickers:library:1.5.2:8:5
+MERGED from com.google.android.gms:play-services:5.2.08:15:5
+MERGED from com.pkmmte.view:circularimageview:1.1:7:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0

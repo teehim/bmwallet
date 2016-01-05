@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:onClick="getPromotionOnClick"
+        android:background="@drawable/big_card"
+        android:weightSum="3">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/beam_icon" />
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:textColor="#515151"
+            android:text="ซื้อโดนัท 1 แถม 1"/>
+
+        <TextView
+            android:id="@+id/use_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#515151"
+            android:text="30 Member Points"/>
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textColor="#515151"
+            android:text="สถานที่ : Dunk'on Donut"/>
+
+        <TextView
+            android:id="@+id/exp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#515151"
+            android:text="Expire Date : 1/1/2557"/>
+
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100"
+            android:layout_weight="1"
+            android:id="@+id/spoint"
+            android:textSize="20sp"
+            android:paddingRight="5dp"
+            android:textColor="@color/before_tap"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>
